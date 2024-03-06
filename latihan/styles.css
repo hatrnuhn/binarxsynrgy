@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  height: 100vh;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid3x4 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 2%;
+  height: 100%;
+  width: 100%;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+}
+
+.circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.rectangle {
+  height: 100px;
+  width: 150px;
+}
+
+.violet {
+  background-color: darkslateblue;
+}
+
+.lighterviolet {
+  background-color: rgb(189, 184, 224);
+}
+
+.white {
+  background-color: white;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.center {
+  justify-content: center;
+}
+
+.end {
+  justify-content: end;
+}
+
+.middle {
+  align-items: center;
+}
+
+.top {
+  top: 5vw;
+}
+
+.bottom {
+  bottom: 5vw;
+}
+
+.left {
+  left: 5vw;
+}
+
+.right {
+  right: 5vw;
+}
+
+.scrollable {
+  height: 300vh;
+}
+
+.margin {
+  margin: 1%;
+}
