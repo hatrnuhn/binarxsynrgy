@@ -1,2 +1,2 @@
 # What the heck is this?
-for Binar x SYNRGY challenge purposes
+repo for all things Binar x SYNRGY related
