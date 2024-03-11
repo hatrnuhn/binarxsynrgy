@@ -40,20 +40,19 @@
   background-color: #F1F3FF;
 }
 
-@media only screen and (min-width: 992px) {
-  .container-md-topic4 {
-    width: 125vw;
-  }
+.svg, .circle, .square {
+  height: 3.5vmin;
+  width: 3.5vmin;
 }
 
-.svg, .circle, .square {
-  height: 4vmin;
-  width: 4vmin;
+.svg-bigger, .circle-bigger, .square-bigger {
+  height: 7vmin;
+  width: 7vmin;
 }
 
 .footer-icon {
-  min-height: 32px;
-  min-width: 32px;
+  min-height: 16px;
+  min-width: 16px;
   max-height: 128px;
   max-width: 128px;
 }
@@ -63,4 +62,18 @@
   min-width: 90px;
   max-height: 60px;
   max-width: 180px;
+}
+
+.faq-text {
+  font-size: 11px;
+}
+
+@media only screen and (min-width: 992px) {
+  .container-md-topic4 {
+    width: 125vw;
+  }
+
+  .faq-text {
+    font-size: 14px;
+  }
 }
