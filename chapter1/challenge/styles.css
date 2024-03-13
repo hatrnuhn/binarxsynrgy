@@ -8,42 +8,187 @@
 :root {
     --primary-blue: #0D28A6;
     --lighterblue: #F1F3FF;
+    --lightblue: #CFD4ED;
 }
 
 body {
     padding: 0;
     margin: 0;
     font-optical-sizing: auto;
+    font-family: Helvetica, sans-serif;
 }
 
-/* navbar */
-.nav {
-    height: 10vh;
-    min-height: 20px;
+/* hero */
+.hero {
+    height: 90vh;
+    font-size: 1rem;
+    background-color: var(--lighterblue);
+}    
+
+@media (min-width: 992px) {
+    .hero {
+        height: 70vh;
+        max-height: 1248px;
+        min-height: 378px;
+        font-size: 1rem;
+    }    
+}
+    /* navbar */
+    .nav {
+        height: 10vh;
+        min-height: 37.8px;
+    }
+
+    .nav__container {
+        width: 80%;
+    }
+
+    .nav__logo {
+        width: 20%;
+    }
+
+    .nav__logo {
+        min-height: 34px;
+        min-width: 100px;
+        height: calc(34rem * 0.08);
+        width: calc(100rem * 0.08);
+        max-width: 300px;
+        max-height: 102px;
+        background-color: var(--primary-blue);
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    }
+    /* end of navbar related */
+
+    /* hero container */
+    .hero__container {
+
+    }
+
+    .hero__text-container {
+        padding-top: 4rem;
+        width: 80%;
+    }
+
+    .hero__title {
+        font-size: 3rem;
+    }
+
+    .hero__descs {
+        font-size: 1.2rem;
+    }
+
+    @media (min-width: 992px) {
+        .hero__title {
+            font-size: 2rem;
+        }
+    
+        .hero__descs {
+            font-size: 1rem;
+        }
+    }
+    
+
+    .hero__car-img {
+        background-image: url(images/kar.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: 37.57vmax;
+        width: 65vmax;
+        max-width: calc(704px * 1.5);
+        max-height: calc(407px * 1.5);
+        min-width: calc(704px * 0.5);
+        min-height: calc(407px * 0.5);
+        transform: scaleX(-1);
+    }
+
+    .hero__car-bg {
+        min-height: 243px * 0.09;
+        max-height: 920px;
+        height: 60%;
+        width: 100vw;
+        border-top-left-radius: 5rem;
+        background-color: var(--primary-blue);
+    }
+
+    @media (min-width: 992px) {
+        .hero__text-container {
+            padding-top: 0rem;
+            width: 40vw;
+            max-width: 666px;
+        }    
+
+    }
+
+/* end of hero related*/
+
+
+/* services*/
+.services {
+    height: 100vh;
 }
 
-.nav__container {
-    width: 80%;
+@media (min-width: 992px) {
+    .services {
+        height: 85vh;
+    }
 }
 
-.nav__logo {
-    width: 20%;
-}
+    .services__container {
+        height: 100%;
+        width: 84%;
+    }
 
-.nav__link {
-    text-decoration: none;
-    color: black;
-    font-size: large;
-    font-weight: 400;
-    font-size: 0.9rem;
-}
+    @media (min-width: 992px) {
+        .services__container {
+            width: 71%;
+            height: 61.873%;
+            max-height: 568px;
+            max-width: 1363px;
+        }    
+    }
+    .services__girl-img {
+        background-image: url(images/gurl.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        max-height: 568px;
+        max-width: 530px;
+        height: 100%;
+        width: 50%;
+        min-width: calc(530px * 0.5);
+        min-height: calc(568px * 0.5);
+    }
 
-.logo {
-    min-height: 34px;
-    min-width: 100px;
-    height: calc(34rem * 0.08);
-    width: calc(100rem * 0.08);
-    max-width: 300px;
-    max-height: 102px;
-    background-color: var(--primary-blue);
-}
+    .services__text-container {
+        width: 100%;
+    }
+
+    @media (min-width: 992px) {
+        .services__text-container {
+            width: 50%;
+        }
+    }
+
+    .services__list-group--no-border {
+        border: none;
+    }
+
+    .services__tick-icon {
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 14 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.3333 1L4.99996 8.33333L1.66663 5' stroke='%230D28A6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-size: 60%;
+        background-color: var(--lightblue);
+        padding: 1rem;
+    }
+    
+/* end of services related */
+
+/* why-us */
+
+/* end of why-us related */
