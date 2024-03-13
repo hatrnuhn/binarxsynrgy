@@ -1,0 +1,49 @@
+.box {
+    background-color: lightblue;
+    border: 1px solid blue;
+    min-height: 50px;
+    font-size: 2rem;
+}
+
+:root {
+    --primary-blue: #0D28A6;
+    --lighterblue: #F1F3FF;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-optical-sizing: auto;
+}
+
+/* navbar */
+.nav {
+    height: 10vh;
+    min-height: 20px;
+}
+
+.nav__container {
+    width: 80%;
+}
+
+.nav__logo {
+    width: 20%;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.logo {
+    min-height: 34px;
+    min-width: 100px;
+    height: calc(34rem * 0.06);
+    width: calc(100rem * 0.06);
+    max-width: 200px;
+    max-height: 68px;
+    background-color: var(--primary-blue);
+}

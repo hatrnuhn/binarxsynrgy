@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Delivery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary-main: #fa4a0c;
+        --black: #252b42;
+        --gray: #e4e4e4;
+      }
+
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        color: var(--black);
+      }
+
+      main {
+        min-height: 100vh;
+        padding-bottom: 3rem;
+      }
+
+      section#main {
+        background-image: url('images/bg-hero.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      footer#footer {
+        background-image: url('images/bg-footer.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .button {
+        font-family: 'Montserrat', sans-serif;
+        background: none;
+        border: 0;
+        font-weight: bold;
+        font-size: 24px;
+        padding: 1rem 2rem;
+        border-radius: 30px;
+      }
+
+      .button--contained {
+        background-color: var(--primary-main);
+        color: #fff;
+      }
+      .button--outlined {
+        border: 1px solid var(--primary-main);
+        color: var(--primary-main);
+      }
+      .button--white {
+        border: 1px solid #fff;
+        color: white;
+      }
+
+      .button:hover {
+        cursor: pointer;
+      }
+
+      /* font styles */
+      .poppins-bold {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+      /* /font styles */
+
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1440px;
+        margin: 0 auto;
+      }
+
+      .nav .nav__menu ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .nav .nav__menu ul li {
+        display: inline-block;
+        list-style-type: none;
+      }
+
+      .nav .nav__menu ul li a {
+        text-decoration: none;
+        color: #000;
+        font-weight: 600;
+      }
+
+      .nav .nav__menu ul li a:hover {
+        color: var(--primary-main);
+        cursor: pointer;
+      }
+
+      .logo .logo__img {
+        width: 206px;
+        height: 101.76px;
+        object-fit: cover;
+      }
+
+      .hero {
+        min-height: 43rem;
+        max-width: 820px;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        padding-bottom: 3rem;
+        position: relative;
+      }
+      .hero__title {
+        font-size: 3.625rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+      .hero__subtitle1 {
+        font-weight: bold;
+        font-size: 24px;
+      }
+      .hero__subtitle2 {
+        font-weight: 200;
+        font-size: 24px;
+      }
+      .hero__buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+      .hero__image {
+        position: absolute;
+        bottom: 0;
+        width: 548px;
+        height: 640px;
+        transform: translateY(86%);
+        padding-bottom: 3rem;
+
+        /* margin-bottom: -50%; */
+      }
+      .hero__image > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .divider {
+        width: 884px;
+        margin: 0 auto;
+        height: 3px;
+        background-color: var(--gray);
+        margin-top: 640px;
+        margin-bottom: 3rem;
+      }
+
+      .footer__title {
+        font-weight: bold;
+        font-size: 40px;
+      }
+
+      .footer__subtitle {
+        font-weight: 500;
+        font-size: 24px;
+      }
+
+      .hero--footer {
+        min-height: 43rem;
+        max-width: 900px;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        padding-bottom: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav class="nav">
+          <div class="logo">
+            <img src="images/logo.png" class="logo__img" />
+          </div>
+          <div class="nav__menu">
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Product</a>
+              </li>
+              <li>
+                <a href="#">FAQ</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <section id="main">
+        <div class="hero">
+          <h4 class="hero__subtitle1">Food App</h4>
+          <h1 class="hero__title">
+            Why stay hungry when you can order form Bella Olonje
+          </h1>
+          <h3 class="hero__subtitle2">
+            Download the bella onoje’s food app now on
+          </h3>
+          <div class="hero__buttons">
+            <button type="button" class="button button--contained">
+              Playstore
+            </button>
+            <button type="button" class="button button--outlined button--white">
+              App Store
+            </button>
+          </div>
+          <div class="hero__image">
+            <img src="images/hero.png" class="" alt="hero image" />
+          </div>
+        </div>
+        <div class="hero__divider"></div>
+      </section>
+
+      <div class="divider"></div>
+
+      <footer id="footer">
+        <div class="hero hero--footer">
+          <p class="footer__title">Download the app now.</p>
+          <p class="footer__subtitle">
+            Available on your favorite store. Start your premium experience now
+          </p>
+          <div class="hero__buttons">
+            <button type="button" class="button button--contained">
+              Playstore
+            </button>
+            <button type="button" class="button button--outlined button--white">
+              App Store
+            </button>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
