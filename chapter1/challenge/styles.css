@@ -41,9 +41,9 @@ body {
 .logo {
     min-height: 34px;
     min-width: 100px;
-    height: calc(34rem * 0.06);
-    width: calc(100rem * 0.06);
-    max-width: 200px;
-    max-height: 68px;
+    height: calc(34rem * 0.08);
+    width: calc(100rem * 0.08);
+    max-width: 300px;
+    max-height: 102px;
     background-color: var(--primary-blue);
 }
