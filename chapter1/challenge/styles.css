@@ -509,3 +509,42 @@ body {
         }    
     }
 /* end of cta related */
+
+/* faq */
+
+.faq {
+    height: 65vh;
+}
+
+@media (max-width: 992px) {
+    .faq {
+        height: 75vh;
+    }
+
+    .faq__container {
+        width: 80%;
+    }
+
+    .faq__container > h1 {
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+
+    .faq__container > p {
+        font-size: 1.1rem;
+        font-weight: 100;
+    }
+
+    .accordion-collapse > p {
+        font-size: 1rem;
+        font-weight: 100;
+    }
+
+    .accordion-header > button {
+        font-size: 1.2rem;
+        font-weight: 100;
+        padding: 5%;
+    }
+}
+
+/* end of faq related */
