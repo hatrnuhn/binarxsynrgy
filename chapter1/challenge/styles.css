@@ -15,7 +15,7 @@ body {
     padding: 0;
     margin: 0;
     font-optical-sizing: auto;
-    font-family: Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif
 }
 
 .primary-blue {
@@ -222,7 +222,7 @@ body {
 
 @media (max-width: 576px) {
     .why-us {
-        height: 120vh;
+        height: 105vh;
     }
 }
 
@@ -297,9 +297,52 @@ body {
     width: 100%;
 }
 
+@media (max-width: 992px) {
+    .temoin {
+        height: 100vh;
+    }
+}
+
+    .temoin__container {
+        height: 90%;
+    }
+
+    .temoin__container > p {
+        font-size: 1rem;
+        font-weight: lighter;
+    }
+
+    .temoin__container > h1 {
+        font-size: 2rem;
+        font-weight: bold;
+    }    
+
+    @media (max-width: 992px) {
+        .temoin__container {
+            height: 90%;
+        }
+    
+        .temoin__container > p {
+            font-size:1.5rem;
+            font-weight: lighter;
+        }
+    
+        .temoin__container > h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }    
+    }
+
     .temoin__carousel-container {
         height: 50%;
         width: 130vw;
+    }
+
+    @media (max-width: 992px) {
+        .temoin__carousel-container {
+            height: 70%;
+            width: 100%;
+        }
     }
 
     .temoin__carousel-container > .row {
@@ -362,8 +405,17 @@ body {
     }
 
     .temoin__profile-container {
+        height: 100%;
+        width: 100%;
     }
-    
+
+    @media (max-width: 992px) {
+        .temoin__profile-container {
+            height: 40%;
+            width: 40%;
+        }    
+    }
+
     .temoin__profile-img,
     .temoin__profile-img--johndoe,
     .temoin__profile-img--johndee,
@@ -373,8 +425,8 @@ body {
         background-size: cover;
         height: 50vmax;
         width: 50vmax;
-        max-width: 100px;
-        max-height: 100px;
+        max-width: 150px;
+        max-height: 150px;
         min-height: 80px;
         min-width: 80px;
     }
@@ -383,11 +435,33 @@ body {
         background-image: url(images/john-doe.png);
     }
 
+    .temoin__profile-img--johndee {
+        background-image: url(images/john-dee.jpg);
+    }
+
+    .temoin__profile-img--janedoe {
+        background-image: url(images/jane-doe.png);
+    }
+
+
     .temoin__avis-container {
         height: 100%;
     }
 
+    @media (max-width: 992px) {
+        .temoin__avis-container {
+            height: 50%;
+        }    
+    }
+
     .temoin__text {
+        width: 100%;
+    }
+
+    @media (max-width: 992px) {
+        .temoin__text {
+            width: 80%;
+        }    
     }
 
     .carousel {
