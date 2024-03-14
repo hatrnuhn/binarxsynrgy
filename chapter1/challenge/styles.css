@@ -516,23 +516,22 @@ body {
     height: 65vh;
 }
 
-@media (max-width: 992px) {
-    .faq {
-        height: 75vh;
-    }
-
     .faq__container {
         width: 80%;
     }
 
-    .faq__container > h1 {
-        font-size: 1.8rem;
+    .faq__left-container > h1 {
+        font-size: 2rem;
         font-weight: bold;
     }
 
-    .faq__container > p {
-        font-size: 1.1rem;
+    .faq__left-container > p {
+        font-size: 1.3rem;
         font-weight: 100;
+    }
+
+    .faq__accordion-container {
+        width: 50%;
     }
 
     .accordion-collapse > p {
@@ -543,8 +542,36 @@ body {
     .accordion-header > button {
         font-size: 1.2rem;
         font-weight: 100;
-        padding: 5%;
+        padding: 2.5%;
     }
+
+
+@media (max-width: 992px) {
+    .faq {
+        height: 75vh;
+    }
+
+        .faq__container {
+            width: 80%;
+        }
+
+        .faq__accordion-container {
+            width: 100%;
+        }    
+
+        .faq__left-container > h1 {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .faq__left-container > p {
+            font-size: 1.1rem;
+            font-weight: 100;
+        }
+
+        .accordion-header > button {
+            padding: 5%;
+        }
 }
 
 /* end of faq related */
