@@ -8,7 +8,7 @@
     <link href="style.css" rel="stylesheet">
   </head>
   <body>
-    <section class="hero container-fluid p-0 d-flex flex-column overflow-x-hidden">
+    <section class="hero container-fluid p-0 d-flex flex-column overflow-hidden">
 
       <nav class="navbar navbar-expand-lg nav">
 
@@ -16,43 +16,58 @@
           <a class="container-fluid w-50 p-0 m-0 d-block align-items-center" href="#">
             <div class="logo" href="#"></div>
           </a>
-          
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-  
-          <div class="collapse navbar-collapse nav__menu" id="navbarNav">
-            <ul class="navbar-nav container-fluid d-flex justify-content-between">
-              <li class="nav-item d-flex align-items-center px-3">
-                <a class="nav-link text-black" href="#">Home</a>
-              </li>
-              <li class="nav-item d-flex align-items-center px-3">
-                <a class="nav-link text-black text-nowrap" href="#">Why Us?</a>
-              </li>
-              <li class="nav-item d-flex align-items-center px-3">
-                <a class="nav-link text-black" href="#">Testimonies</a>
-              </li>
-              <li class="nav-item d-flex align-items-center px-3">
-                <a class="nav-link text-black" href="#">FAQs</a>
-              </li>
-              <li class="nav-item d-flex align-items-center px-3">
-                <a class="nav-link" href="#">
-                  <div class="btn btn-success fw-bold border-5 p-2">Register</div>
-                </a>
-              </li>
-            </ul>
+
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header pt-5">
+              <div class="w-100 d-flex justify-content-between align-items-center">
+                <h5 class="offcanvas-title fw-bold fs-4 ps-3" id="offcanvasNavbarLabel">BCR</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>  
+              </div>
+            </div>
+
+            <div class="offcanvas-body">
+              <ul class="navbar-nav container-fluid d-flex justify-content-between">
+                <li class="nav-item d-flex align-items-center px-3">
+                  <a class="nav-link text-black" href="#">Home</a>
+                </li>
+                <li class="nav-item d-flex align-items-center px-3">
+                  <a class="nav-link text-black text-nowrap" href="#">Why Us?</a>
+                </li>
+                <li class="nav-item d-flex align-items-center px-3">
+                  <a class="nav-link text-black" href="#">Testimonies</a>
+                </li>
+                <li class="nav-item d-flex align-items-center px-3">
+                  <a class="nav-link text-black" href="#">FAQs</a>
+                </li>
+                <li class="nav-item d-flex align-items-center px-3">
+                  <a class="nav-link" href="#">
+                    <div class="btn btn-success fw-bold border-5 p-2">Register</div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+
           </div>
         </div>
 
-      </nav>  
+      </nav>
 
       <div class="d-flex flex-lg-row flex-column justify-content-between h-100 align-self-lg-end align-self-center hero__container">
 
-          <div class="d-flex justify-content-lg-end justify-content-center">
-            <div class="hero__text-container align-self-center pe-5 justify-content-center">
+          <div class="d-flex justify-content-lg-end justify-content-center h-100">
+            <div class="hero__text-container d-flex flex-column pe-5 justify-content-center">
               <h3 class="fw-bolder hero__title">Sewa & Rental Mobil Terbaik di Kawasan (Lokasimu)</h3>
               <p class="hero__descs fw-lighter">Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam!</p>
-              <button class="btn btn-success fw-bold border-0 p-3">Mulai Sewa Mobil</button>
+              <div class="d-block">
+                <button class="btn btn-success fw-bold p-3">Mulai Sewa Mobil</button>
+              </div>
             </div>
           </div>
           <div class="hero__car-container p-0 h-100 d-flex align-items-end">
@@ -62,9 +77,9 @@
           </div>
 
       </div>
-      
+
     </section>
-    
+
     <section class="services container-fluid p-0 d-flex justify-content-center">
       <div class="d-block services__container align-self-center d-flex justify-content-lg-between flex-lg-row flex-column justify-content-center align-items-center">
         <div class="services__girl-img mx-5"></div>
@@ -141,7 +156,7 @@
       <div class="temoin__container d-flex flex-column justify-content-center">
         <h1 class="d-flex justify-content-center pb-3 text-center">What do they say?</h1>
         <p class="d-flex justify-content-center pb-3 text-center">Jadi ini kata mereka</p>
-        
+
         <div class="temoin__carousel-container d-flex justify-content-center">
           <div class="row g-0">
             <div class="col-4 d-none d-lg-flex justify-content-center">
@@ -163,8 +178,8 @@
                         <p class="temoin__text fs-5 small pt-3">
                           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor minus rem accusamus aut id accusantium voluptas aperiam tenetur quam sint"
                         </p>
-                        <p class="temoin__name fw-bold fs-5">John Dee 32, Austin</p>  
-                      </div>  
+                        <p class="temoin__name fw-bold fs-5">John Dee 32, Austin</p>
+                      </div>
                     </div>
                   </div>
                   <div class="carousel-item h-100 lightblue">
@@ -183,8 +198,8 @@
                         <p class="temoin__text fs-5 small pt-3">
                           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor minus rem accusamus aut id accusantium voluptas aperiam tenetur quam sint"
                         </p>
-                        <p class="temoin__name fw-bold fs-5">John Doe 32, Kaboul</p>  
-                      </div>  
+                        <p class="temoin__name fw-bold fs-5">John Doe 32, Kaboul</p>
+                      </div>
                     </div>
                   </div>
                   <div class="carousel-item h-100 lightblue">
@@ -203,12 +218,12 @@
                         <p class="temoin__text fs-5 small pt-3">
                           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor minus rem accusamus aut id accusantium voluptas aperiam tenetur quam sint"
                         </p>
-                        <p class="temoin__name fw-bold fs-5">Jane Doe 32, Johannesburg</p>  
-                      </div>  
+                        <p class="temoin__name fw-bold fs-5">Jane Doe 32, Johannesburg</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>  
+              </div>
             </div>
 
             <div class="col-12 col-lg-4 d-flex justify-content-center">
@@ -230,8 +245,8 @@
                         <p class="temoin__text fs-5 small pt-3 text-center text-lg-start">
                           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor minus rem accusamus aut id accusantium voluptas aperiam tenetur quam sint"
                         </p>
-                        <p class="temoin__name fw-bold fs-5">John Dee 32, Austin</p>  
-                      </div>  
+                        <p class="temoin__name fw-bold fs-5">John Dee 32, Austin</p>
+                      </div>
                     </div>
                   </div>
                   <div class="carousel-item active h-100 lightblue">
@@ -250,8 +265,8 @@
                         <p class="temoin__text fs-5 small pt-3 text-center text-lg-start">
                           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor minus rem accusamus aut id accusantium voluptas aperiam tenetur quam sint"
                         </p>
-                        <p class="temoin__name fw-bold fs-5">John Doe 32, Kaboul</p>  
-                      </div>  
+                        <p class="temoin__name fw-bold fs-5">John Doe 32, Kaboul</p>
+                      </div>
                     </div>
                   </div>
                   <div class="carousel-item h-100 lightblue">
@@ -270,14 +285,14 @@
                         <p class="temoin__text fs-5 small pt-3 text-center text-lg-start">
                           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor minus rem accusamus aut id accusantium voluptas aperiam tenetur quam sint"
                         </p>
-                        <p class="temoin__name fw-bold fs-5">Jane Doe 32, Johannesburg</p>  
-                      </div>  
+                        <p class="temoin__name fw-bold fs-5">Jane Doe 32, Johannesburg</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>    
+              </div>
             </div>
-            
+
             <div class="col-4 d-none d-lg-flex justify-content-center">
               <div id="carousel-r" class="carousel slide">
                 <div class="carousel-inner h-100 rounded-3">
@@ -297,8 +312,8 @@
                         <p class="temoin__text fs-5 small pt-3">
                           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor minus rem accusamus aut id accusantium voluptas aperiam tenetur quam sint"
                         </p>
-                        <p class="temoin__name fw-bold fs-5">John Dee 32, Austin</p>  
-                      </div>  
+                        <p class="temoin__name fw-bold fs-5">John Dee 32, Austin</p>
+                      </div>
                     </div>
                   </div>
                   <div class="carousel-item h-100 lightblue">
@@ -317,8 +332,8 @@
                         <p class="temoin__text fs-5 small pt-3">
                           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor minus rem accusamus aut id accusantium voluptas aperiam tenetur quam sint"
                         </p>
-                        <p class="temoin__name fw-bold fs-5">John Doe 32, Kaboul</p>  
-                      </div>  
+                        <p class="temoin__name fw-bold fs-5">John Doe 32, Kaboul</p>
+                      </div>
                     </div>
                   </div>
                   <div class="carousel-item active h-100 lightblue">
@@ -337,8 +352,8 @@
                         <p class="temoin__text fs-5 small pt-3">
                           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor minus rem accusamus aut id accusantium voluptas aperiam tenetur quam sint"
                         </p>
-                        <p class="temoin__name fw-bold fs-5">Jane Doe 32, Johannesburg</p>  
-                      </div>  
+                        <p class="temoin__name fw-bold fs-5">Jane Doe 32, Johannesburg</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -358,7 +373,7 @@
           <button class="btn btn-success rounded-circle d-flex justify-content-center align-items-center temoin__carousel-button mx-2" type="button" data-bs-target="#carousel-main" data-bs-slide="next" id="carousel-btn-next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
-          </button>  
+          </button>
         </div>
 
       </div>
@@ -377,7 +392,7 @@
       <div class="faq__container d-flex flex-column flex-lg-row justify-content-lg-between">
         <div class="faq__left-container d-flex flex-column justify-content-lg-start align-items-lg-start">
           <h1 class="text-center">Frequently Asked Questions</h1>
-          <p class="text-center my-3">Lorem ipsum dolor sit amet consectetur adipisicing.</p>  
+          <p class="text-center my-3">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
         </div>
         <div class="faq__accordion-container">
           <div class="accordion" id="accordion-root2">
@@ -394,7 +409,7 @@
                   </p>
                 </div>
               </div>
-            </div> 
+            </div>
             <div class="accordion py-2" id="accordion-faq2">
               <div class="accordion-item border-2">
                 <h2 class="accordion-header">
@@ -457,7 +472,7 @@
         </div>
       </div>
     </section>
-    
+
     <footer class="footer d-flex justify-content-center align-items-center w-100">
       <div class="footer__container d-flex flex-lg-row justify-content-lg-between align-items-lg-start flex-column justify-content-center">
         <div class="footer__addr-container d-flex flex-column">

@@ -79,6 +79,12 @@ body {
         font-size: 1rem;
         font-weight: 400;
     }
+
+    @media (max-width: 992px) {
+        .nav-link {
+            font-size: 1.3rem;
+        }
+    }
     /* end of navbar related */
 
     /* hero container */
@@ -93,7 +99,7 @@ body {
     }
 
     .hero__title {
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
 
     .hero__descs {
@@ -124,8 +130,8 @@ body {
         width: calc(70.4vw * 1.1);
         max-width: calc(704px * 1.5);
         max-height: calc(407px * 1.5);
-        min-width: calc(704px * 0.6);
-        min-height: calc(407px * 0.6);
+        min-width: calc(704px * 0.8);
+        min-height: calc(407px * 0.8);
         transform: scaleX(-1);
     }
 
@@ -140,13 +146,13 @@ body {
 
     @media (max-width: 992px) {
         .hero__car-container {
-            width: 100%;
+            width: 100vw;
             overflow: visible;
         }
         
         .hero__text-container {
-            padding-top: 4rem;
-            width: 90%;    
+            width: 90%;  
+            max-width: none;
         }    
 
     }
