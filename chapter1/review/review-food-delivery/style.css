@@ -1,0 +1,89 @@
+.box {
+    background-color: lightblue;
+    border: 1px solid blue;
+    min-height: 50px;
+    font-size: 2rem;
+}
+
+:root {
+    --primary-orange: #FA4A0C;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+
+/* hero */
+.hero {
+    width: 100%;
+    height: 100%;
+}
+
+    .hero__login {
+        width: 100%;
+        height: 100vh;
+    }
+
+        .hero__login-container {
+            height: 90%;
+            width: 80%;
+        }
+
+        .hero__login-img-container {
+            width: 50%;
+            height: 100%;
+        }
+
+            .hero__login-img {
+                background-image: url(login.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                max-height: 875px;
+                max-width: 503.3px;
+                min-height: calc(875px * 0.8);
+                min-width: calc(503.3px * 0.8);
+                height: 57.5vw;
+                width: 100vw;
+                filter: drop-shadow(10px 10px 15px);
+                color: gray;
+            }
+
+        .hero__login-text-container {
+            width: 48%;
+        }
+
+        .hero__login-text-container h1 {
+            font-weight: bold;
+            font-size: 2rem;
+            color: var(--primary-orange);
+        }
+
+        .hero__login-container p {
+            font-weight: lighter;
+            font-size: 2rem;
+        }
+
+        .hero__login-text-container h2 {
+            font-weight: bold;
+            font-size: 3rem;
+        }
+
+        @media (max-width: 992px) {
+            .hero__login {
+                height: 150vh;
+            }
+            .hero__login-img-container {
+                width: 100%;
+                height: 50%;
+            }
+            .hero__login-text-container {
+                width: 100%;
+                height: 48%;
+            }    
+
+        }
