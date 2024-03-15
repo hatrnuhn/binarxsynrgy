@@ -204,6 +204,16 @@
       position: relative;
     }
 
+    .main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .wrapper {
+      width: 80%;
+    }
+
     .wrapper-download {
       position: absolute;
       left: 0;
@@ -287,20 +297,28 @@
       height: 380px;
     }
 
+    .heading > h2 {
+      font-size: 3rem;
+      opacity: 80%;
+    }
+
     .content span {
       color: #ff6a00;
       margin: 16px;
       font-weight: bold;
+      font-size: 2rem;
     }
 
     .content h3 {
       margin: 16px;
-      font-size: 20px;
+      font-weight: bold;
+      font-size: 2.5rem;
     }
 
     .content p {
-      color: #3e3e3b;
+      color: #737373;
       margin: 16px;
+      font-size: 2rem;
     }
 
     /* Footer Section */
@@ -415,48 +433,51 @@
   </div>
 
   <!-- /Main Section -->
-  <div class="wrapper">
-    <div class="heading">
-      <h2>How the app works</h2>
-    </div>
-    <div class="content">
-      <div class="row">
-        <div class="picture">
-          <img src="assets/Guide(1).png" alt="" />
+  <div class="main">
+    <div class="wrapper">
+      <div class="heading">
+        <h2>How the app works</h2>
+      </div>
+      <div class="content">
+        <div class="row">
+          <div class="picture">
+            <img src="assets/Guide(1).png" alt="" />
+          </div>
+          <div class="description">
+            <span>Create an account</span>
+            <h3>Create/login to an existing account to get started</h3>
+            <p>An account is creating our email and a desire password</p>
+          </div>
         </div>
-        <div class="description">
-          <span>Create an account</span>
-          <h3>Create/login to an existing account to get started</h3>
-          <p>An account is creating our email and a desire password</p>
+      </div>
+      <div class="content">
+        <div class="row">
+          <div class="description">
+            <span>Explore varities</span>
+            <h3>Shop for your favorites meal as e dey hot</h3>
+            <p>
+              Shop for your favorite meals or drinks and ejoy while doing it
+            </p>
+          </div>
+          <div class="picture">
+            <img src="assets/Guide(2).png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="row">
+          <div class="picture">
+            <img src="assets/Guide(2).png" alt="" />
+          </div>
+          <div class="description">
+            <span>Checkout</span>
+            <h3>When you done check out and get it delivered</h3>
+            <p>When you done check out and get it delivered with ease</p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="content">
-      <div class="row">
-        <div class="description">
-          <span>Explore varities</span>
-          <h3>Shop for your favorites meal as e del hot</h3>
-          <p>
-            Shop for your favorite meals or drinks and ejoy while doing it
-          </p>
-        </div>
-        <div class="picture">
-          <img src="assets/Guide(2).png" alt="" />
-        </div>
-      </div>
-    </div>
-    <div class="content">
-      <div class="row">
-        <div class="picture">
-          <img src="assets/Guide(2).png" alt="" />
-        </div>
-        <div class="description">
-          <span>Checkout</span>
-          <h3>When you done check out and get it delivered</h3>
-          <p>When you done check out and get it delivered with ease</p>
-        </div>
-      </div>
-    </div>
+  
   </div>
 
   <!-- Section Download -->
