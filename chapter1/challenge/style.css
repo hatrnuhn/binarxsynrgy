@@ -99,20 +99,18 @@ body {
     }
 
     .hero__title {
-        font-size: 2.8rem;
+        font-size: 2.6rem;
     }
 
     .hero__descs {
         font-size: 1.2rem;
+        width: 100%;
     }
 
-    @media (min-width: 992px) {
-        .hero__title {
-            font-size: 2rem;
-        }
-    
+    @media (min-width: 992px) {    
         .hero__descs {
             font-size: 1rem;
+            width: 80%;
         }
     }
     
@@ -237,7 +235,18 @@ body {
 
 @media (max-width: 576px) {
     .why-us {
-        height: 105vh;
+        height: 100vh;
+    }
+}
+
+@media (max-width: 496px) {
+    .why-us {
+        height: 120vh;
+    }
+}
+@media (max-width: 297px) {
+    .why-us {
+        height: 140vh;
     }
 }
 
@@ -293,7 +302,6 @@ body {
         height: 100vh;
     }
 }
-
     .temoin__container {
         height: 90%;
     }
