@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* npx tailwindcss -i ./src/input.css -o ./dist/style.css --watch */
+
+* {
+    font-family: Helvetica, sans-serif;
+}
+
+@layer components {
+    .box {
+        min-height: 1rem;
+        border: 1px solid blue;
+        font-size: 1rem;
+        background-color: lightblue;
+    }
+    .hero {
+        height: 657px;
+        width: 100vw;
+    }
+
+    .hero__nav {
+        height: 0px;
+    }
+
+    .hero__nav-container {
+        width: 91.111%;
+    }
+
+    .hero__nav-menu-icon {
+        -webkit-mask: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 18H21' stroke='%23222222' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M3 12H21' stroke='%23222222' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M3 6H21' stroke='%23222222' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");    
+        mask-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 18H21' stroke='%23222222' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M3 12H21' stroke='%23222222' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M3 6H21' stroke='%23222222' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        -webkit-mask-position: center;
+        mask-position: center;
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        background-color: #222222;
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    .hero__text-container {
+        height: 69.711%;
+    }
+
+    .hero__text {
+        width: 91.111%;
+    }
+
+    .hero__text-container h1 {
+        font-size: 2rem;
+        line-height: 3.375rem;
+        font-weight: 700;
+    }
+
+    .hero__text-container p {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        font-weight: 300;
+    }
+
+    .hero__img-container {
+        height: 30.289%;
+    }
+
+    .hero__img-bg {
+        height: 118.81px;
+        width: 100%;
+        border-top-left-radius: 3.75rem;
+        position: relative;
+        left: 1rem;
+    }
+
+    .hero__img-png {
+        background-image: url(../dist/images/kar.png);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 199px;
+        width: 344.22px;
+        transform: scaleX(-1);
+    }
+
+    .button {
+        background-color: limegreen;
+        font-size: 0.875rem;
+        font-weight: 700;
+        line-height: 1.25rem;
+        padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+        color: white;
+        border-radius: 0.125rem;
+        height: 36px;
+    }
+
+    .bcr-logo {
+        height: 34px;
+        width: 100px;
+    }
+}
